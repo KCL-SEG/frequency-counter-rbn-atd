@@ -11,6 +11,6 @@ def frequencies(items):
 
     return frequencies
 
-print("enter values (strings) separated by commas: ")
-thinglist = sorted([str(value) for value in input().split(",")])
-print(frequencies(thinglist))
+# print("enter values (strings) separated by commas: ")
+# thinglist = sorted([str(value) for value in input().split(",")])
+# print(frequencies(thinglist))
