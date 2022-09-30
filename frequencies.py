@@ -3,14 +3,16 @@
 
 def frequencies(items):
     frequencies = {}
-    print(items)
-    # for i in range(len(items)):
-    #     frequencies[items[i]]=items.count(items[i])
+    
     for x in items:
-        frequencies[x]=items.count(x)
+        if(frequencies.get(x) == None):
+            frequencies[x]=1
+        else:
+            frequencies[x]=frequencies.get(x)+1
 
     return frequencies
 
 # print("enter values (strings) separated by commas: ")
-# thinglist = sorted([str(value) for value in input().split(",")])
-# print(frequencies(thinglist))
+
+items =['0', 4,4,'4','d','d','e',0,'a','d','4']# thinglist = sorted([str(value) for value in input().split(",")])
+print(frequencies(items))
